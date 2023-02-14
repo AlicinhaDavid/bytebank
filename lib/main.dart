@@ -30,6 +30,7 @@ class FormularioTransferencia extends StatelessWidget {
               style: TextStyle(fontSize: 24.0),
               decoration: InputDecoration(
                   labelText: 'Numero da conta', hintText: '0000'),
+              keyboardType: TextInputType.number,
             ),
           ),
         ],
