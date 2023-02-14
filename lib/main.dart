@@ -44,7 +44,7 @@ class FormularioTransferencia extends StatelessWidget {
           ),
           ElevatedButton(
             child: Text('Confirmar'),
-            onPressed: () => {},
+            onPressed: () => {debugPrint('Clicou')},
           )
         ],
       ),
