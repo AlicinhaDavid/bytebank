@@ -6,7 +6,7 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        body: ListaTransferencias(),
+        body: FormularioTransferencia(),
         appBar: AppBar(
           title: Text(
             'Tranferências',
@@ -19,6 +19,13 @@ void main() {
       ),
     ),
   );
+}
+
+class FormularioTransferencia extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
 }
 
 class ListaTransferencias extends StatelessWidget {
@@ -52,11 +59,8 @@ class ItemTransferencia extends StatelessWidget {
 }
 
 class Transferencia {
-
-  final double valor ;
+  final double valor;
   final int numeroConta;
 
   Transferencia(this.valor, this.numeroConta);
-
-  
 }
