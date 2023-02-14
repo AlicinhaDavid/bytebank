@@ -24,10 +24,13 @@ class FormularioTransferencia extends StatelessWidget {
       appBar: AppBar(title: Text('Criando Transferência')),
       body: Column(
         children: [
-          TextField(
-            style: TextStyle(fontSize: 24.0),
-            decoration:
-                InputDecoration(labelText: 'Numero da conta', hintText: '0000'),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              style: TextStyle(fontSize: 24.0),
+              decoration:
+                  InputDecoration(labelText: 'Numero da conta', hintText: '0000'),
+            ),
           ),
         ],
       ),
