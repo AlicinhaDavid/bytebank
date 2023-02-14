@@ -44,6 +44,10 @@ class FormularioTransferencia extends StatelessWidget {
               keyboardType: TextInputType.number,
             ),
           ),
+          ElevatedButton(
+            child: Text('Confirmar'),
+            onPressed: () => {},
+          )
         ],
       ),
     );
