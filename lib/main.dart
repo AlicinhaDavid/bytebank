@@ -33,6 +33,15 @@ class FormularioTransferencia extends StatelessWidget {
               keyboardType: TextInputType.number,
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 8.0),
+            child: TextField(
+              style: TextStyle(fontSize: 24.0),
+              decoration: InputDecoration(
+                  labelText: 'Valor', hintText: '0.00'),
+              keyboardType: TextInputType.number,
+            ),
+          ),
         ],
       ),
     );
