@@ -25,11 +25,11 @@ class FormularioTransferencia extends StatelessWidget {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 8.0),
             child: TextField(
               style: TextStyle(fontSize: 24.0),
-              decoration:
-                  InputDecoration(labelText: 'Numero da conta', hintText: '0000'),
+              decoration: InputDecoration(
+                  labelText: 'Numero da conta', hintText: '0000'),
             ),
           ),
         ],
