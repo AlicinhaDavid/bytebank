@@ -38,7 +38,9 @@ class FormularioTransferencia extends StatelessWidget {
             child: TextField(
               style: TextStyle(fontSize: 24.0),
               decoration: InputDecoration(
-                  labelText: 'Valor', hintText: '0.00'),
+                  icon: Icon(Icons.monetization_on),
+                  labelText: 'Valor',
+                  hintText: '0.00'),
               keyboardType: TextInputType.number,
             ),
           ),
