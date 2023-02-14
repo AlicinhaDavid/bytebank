@@ -25,9 +25,10 @@ class FormularioTransferencia extends StatelessWidget {
       body: Column(
         children: [
           TextField(
-            decoration: InputDecoration(labelText: 'Numero da conta', hintText: '0000'),
+            style: TextStyle(fontSize: 24.0),
+            decoration:
+                InputDecoration(labelText: 'Numero da conta', hintText: '0000'),
           ),
-          
         ],
       ),
     );
