@@ -7,15 +7,6 @@ void main() {
     MaterialApp(
       home: Scaffold(
         body: FormularioTransferencia(),
-        appBar: AppBar(
-          title: Text(
-            'Tranferências',
-          ),
-        ),
-        floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.add),
-          onPressed: () {},
-        ),
       ),
     ),
   );
@@ -31,12 +22,23 @@ class FormularioTransferencia extends StatelessWidget {
 class ListaTransferencias extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        ItemTransferencia(Transferencia(100.0, 1000)),
-        ItemTransferencia(Transferencia(200.0, 1000)),
-        ItemTransferencia(Transferencia(300.0, 1000))
-      ],
+    return Scaffold(
+      body: Column(
+        children: [
+          ItemTransferencia(Transferencia(100.0, 1000)),
+          ItemTransferencia(Transferencia(200.0, 1000)),
+          ItemTransferencia(Transferencia(300.0, 1000))
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {},
+      ),
+      appBar: AppBar(
+        title: Text(
+          'Transferências',
+        ),
+      ),
     );
   }
 }
