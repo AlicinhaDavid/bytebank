@@ -34,6 +34,7 @@ class FormularioTransferencia extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 8.0),
             child: TextField(
+              controller: TextEditingController(),
               style: TextStyle(fontSize: 24.0),
               decoration: InputDecoration(
                   icon: Icon(Icons.monetization_on),
