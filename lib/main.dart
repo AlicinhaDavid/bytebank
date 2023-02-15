@@ -16,6 +16,11 @@ class ByteBankApp extends StatelessWidget {
 }
 
 class FormularioTransferencia extends StatelessWidget {
+  final TextEditingController _accountNumberFieldController =
+      TextEditingController();
+  final TextEditingController _transferValueFieldController =
+      TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,6 +30,7 @@ class FormularioTransferencia extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 8.0),
             child: TextField(
+              controller: _accountNumberFieldController,
               style: TextStyle(fontSize: 24.0),
               decoration: InputDecoration(
                   labelText: 'Numero da conta', hintText: '0000'),
@@ -34,7 +40,7 @@ class FormularioTransferencia extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 8.0),
             child: TextField(
-              controller: TextEditingController(),
+              controller: _transferValueFieldController,
               style: TextStyle(fontSize: 24.0),
               decoration: InputDecoration(
                   icon: Icon(Icons.monetization_on),
@@ -45,7 +51,11 @@ class FormularioTransferencia extends StatelessWidget {
           ),
           ElevatedButton(
             child: Text('Confirmar'),
-            onPressed: () => {debugPrint('Clicou')},
+            onPressed: () {
+              debugPrint('Clicou');
+              debugPrint(_accountNumberFieldController.text);
+              debugPrint(_transferValueFieldController.text);
+            },
           )
         ],
       ),
